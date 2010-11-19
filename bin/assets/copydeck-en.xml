@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<copy>
+    <section name="Intro">
+        <title>Your Time Is Precious</title>
+        <intro>That’s why we're so committed to giving you an accurate quote within minutes. For each driver on your quote, please have a driver's license number available.  Ready to begin?</intro>
+        <advanceBtnLbl>Get Started</advanceBtnLbl>
+    </section>
+    
+    <section name="UserInformation">
+        <title><![CDATA[Your Information]]></title>
+        <firstName><![CDATA[First Name:*]]></firstName>
+        <lastName><![CDATA[Last Name:*]]></lastName>
+        <address><![CDATA[Address:*]]></address>
+        <suffix><![CDATA[Suffix:]]></suffix>
+        <city><![CDATA[City:*]]></city>
+        <state><![CDATA[State:*]]></state>
+        <dateOfBirth><![CDATA[Date of Birth:*]]></dateOfBirth>
+        <middleInitial><![CDATA[Middle Initial:]]></middleInitial>
+        <zipCode><![CDATA[Zip Code:*]]></zipCode>
+        <email><![CDATA[Email:]]></email>
+        <phone><![CDATA[Phone:]]></phone>
+        <permission><![CDATA[I understand and agree to these terms:*]]></permission>
+        <addressConfirm><![CDATA[I have lived at this address for less than 1 year:]]></addressConfirm>
+        <agreement><![CDATA[Reports will be ordered to properly classify and rate your policy. These reports include information about claims, credit history, and driving history, and may include information about current and former members of your household. These reports provide information that may assist in determining your eligibility for insurance and the price you may be charged. Consumer reports may also be used for updates, renewals, or extensions of this insurance. We may also obtain and use a credit-based insurance score based on information contained in your credit report. We may use a third party in connection with the development of the insurance score.State privacy laws require that you are notified that personal information may be collected from sources other than yourself. This will include a loss history report showing your personal insurance claims history. Such information, as well as other information collected, may be disclosed in circumstances to third parties without authorization. A right to access and correction exists with respect to all personal information and a written notice will be furnished to you upon request.]]></agreement>
+    </section>
+    
+    <section name="AddSelectVehicles">
+        <title><![CDATA[Provide Vehicle Details]]></title>
+        <formHeaderTitle><![CDATA[We found the following vehicles listed for your address.]]></formHeaderTitle>
+        <subtitleText><![CDATA[Please select and/or add up to four <span textDecoration="underline" color="#307a8a">eligible vehicles</span> to include in your quote:*]]></subtitleText>
+        <mustSelectOne><![CDATA[Must have at least one vehicle selected.]]></mustSelectOne>
+        <addVehicleBtnLbl><![CDATA[Add Vehicle]]></addVehicleBtnLbl>
+        <addVehicleModalTitle><![CDATA[Add Vehicle]]></addVehicleModalTitle>
+        <addVehicleModalEnterVIN><![CDATA[Enter the Vehicle Identification Number (or VIN)]]></addVehicleModalEnterVIN>
+        <addVehicleModalVINFieldLbl><![CDATA[Vehicle Identification Number]]></addVehicleModalVINFieldLbl>
+        <addVehicleModalAddBtnLbl><![CDATA[Add]]></addVehicleModalAddBtnLbl>
+        <subtitleToolTip><![CDATA[We current provide an online quote only for cars, trucks, minivans and SUV's.  We cannot provide an online estimate for the following specialty vehicles. <br /> - all terrain vehicles (ATV)<br /> - amphibious vehicles<br />- antique automobiles (maintained solely for use in exhibitions, club activities, parades, etc.)<br /> - campers<br /> - classic automobiles<br /> - dune buggies<br /> - farm equipment <br />- golf carts<br />- motorcycles<br />- motor homes<br />- replicas<br />- snowmobiles<br />- trailers<br /><br />Please contact an agent or our Customer Contact Center: 1-800-MYAMFAM (692-6326) for assistance]]></subtitleToolTip>
+    	<addVehicleModalIsReplica><![CDATA[Is any vehicle a <span color="#307a8a" textDecoration="underline">replica</span>?*]]></addVehicleModalIsReplica>
+    	<addVehicleIsReplicaToolTip><![CDATA[A copy or reproduction of an original auto. The auto is modified or altered.]]></addVehicleIsReplicaToolTip>
+    	<addVehicleModalForOccupation><![CDATA[Is any vehicle used in <span color="#307a8a" textDecoration="underline">occupation, or for sales or delivery</span>?*]]></addVehicleModalForOccupation>
+    	<addVehicleForOccupationToolTip><![CDATA[This includes vehicles owned by a business, used for delivery, driven by an employee or displaying a business logo.  An American Family agent can provide an estimate for vehicles used in business.]]></addVehicleForOccupationToolTip>
+    </section>
+    
+    <section name="VehicleInformation">
+        <annualMileage><![CDATA[Annual Mileage:*]]></annualMileage>
+        <keptAtHome><![CDATA[Is this vehicle kept at this address?*]]></keptAtHome>
+        <editAddressBtnLbl><![CDATA[Edit Address]]></editAddressBtnLbl>
+        <ownershipStatus><![CDATA[Is this a <span color="#307a8a" textDecoration="underline">leased</span> vehicle?*]]></ownershipStatus>
+        <hasLienholder><![CDATA[Does this vehicle have a <span color="#307a8a" textDecoration="underline">lienholder</span>?*]]></hasLienholder>
+        <isCustomized><![CDATA[Is this vehicle <span color="#307a8a" textDecoration="underline">customized</span>?*]]></isCustomized>
+        <airbagTT><![CDATA[Is this vehicle equipped with an air bag?*]]></airbagTT>
+        <unrepairedTT><![CDATA[Do any of your vehicles have <span color="#307a8a" textDecoration="underline">unrepaired damage</span>?*]]></unrepairedTT>
+        <customizedToolTip><![CDATA[An auto is customized if it has special equipment that was not factory-installed.  
+        Custom paint jobs, exhaust and suspension modifications, engine/motor alterations, replicas and kit cars are all 
+        considered customized.  When figuring the value, round to the nearest hundred.  And if you want to insure a race car, 
+        you'll want to talk to an agent]]></customizedToolTip>
+        <lienHolderToolTip><![CDATA[A lien holder is the person or organization that has a lien (or a secured interest) on the auto.]]></lienHolderToolTip>
+        <leasedVehicleToolTip><![CDATA[Third-party leases bound by a contract with the original lessee are ineligible.]]></leasedVehicleToolTip>
+        <unrepairedDamageToolTip><![CDATA[Unrepaired damage includes, but is not limited to, any vehicle, windshield or glass damage, or missing parts (including wheel covers).]]></unrepairedDamageToolTip>
+    	<titleHolderToolTip><![CDATA[Titleholder refers to any name(s), including financial institutions, appearing on the title as a vehicle owner. 
+Attention Nevada residents: Nevada law requires the titleholder(s) to be listed as a named insured on the policy. American Family only accepts personal names as named insureds on a personal auto policy.]]></titleHolderToolTip>
+		<leaseLoanGapToolTip><![CDATA[This endorsement provides protection for the insured who leased or purchases an auto and owes more on the lease or loan than the auto is worth. The only collateral allowed for a loan or lease agreement is the auto. In the event of a total loss, the endorsement covers the difference between what is owed on the lease or loan and the actual cash value of the auto.
+The auto must carry comprehensive and collision coverage to obtain the endorsement.
+This endorsement is available for personal lines private passenger autos, including pick-up trucks and sport utility autos.
+These are only general descriptions of terms and available coverages; they are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. ]]></leaseLoanGapToolTip>
+    </section>
+    
+    <section name="AddSelectDrivers">
+        <title><![CDATA[Select Drivers/Non Drivers]]></title>
+        <formHeaderTitle><![CDATA[Persons Eligible to Drive]]></formHeaderTitle>
+        <editDriversBtnLbl><![CDATA[Edit Drivers]]></editDriversBtnLbl>
+        <edit><![CDATA[Edit Driver]]></edit>
+        <editNonDriversBtnLbl><![CDATA[Edit Non-Drivers]]></editNonDriversBtnLbl>
+        <felonyConviction><![CDATA[Does anyone in your household have a <span color="#307a8a" textDecoration="underline">felony conviction</span>?*]]></felonyConviction>
+        <felonyToolTip><![CDATA[Have you been convicted for a felony other than a motor vehicle violation.  Examples include Fraud, Embezzlement, Grand Theft, Arson and Vandalism.]]></felonyToolTip>
+        <driversListTitle><![CDATA[Drivers]]></driversListTitle>
+        <nonDriversListTitle><![CDATA[Non-Drivers]]></nonDriversListTitle>
+        <drivingAgeOrOlder><![CDATA[age 16 or older]]></drivingAgeOrOlder>
+        <includeInQuote><![CDATA[Include in Quote]]></includeInQuote>
+        <name><![CDATA[Name]]></name>
+        <driverStatus><![CDATA[Driver Status]]></driverStatus>
+        <nonDriversToolTip><![CDATA[Include all drivers in your home who are 16 or older and have access to the autos in this estimate or quote. This includes: Family members, wards, foster children, domestic partners and roommates that live at your address, even if they have their own car and insurance.  Currently or previously licensed operators, whether listed as a driver or non-driver on a policy All household members with suspended or revoked licenses]]></nonDriversToolTip>
+        <childrenUnderSixteenToolTip><![CDATA[This information is used for review purposes and to make sure we keep your coverage and classifications up to date.]]></childrenUnderSixteenToolTip>
+        <childrenUnderSixteen><![CDATA[Does your household have <span color="#307a8a" textDecoration="underline">children under the age of 16</span>?*]]></childrenUnderSixteen>
+    </section>
+    
+    <section name="DriverInformation">
+        <title><![CDATA[Provide Details]]></title>
+        <driver><![CDATA[Driver]]></driver>
+        <drivingInformation><![CDATA[Driving Information]]></drivingInformation>
+        <defensiveDriver><![CDATA[Eligible for Defensive Driver Discount?*]]></defensiveDriver>
+        <defensiveDate><![CDATA[Date you became eligible:*]]></defensiveDate>
+        <licenseState><![CDATA[Driver's License State:*]]></licenseState>
+        <licenseNumber><![CDATA[Driver's License Number:*]]></licenseNumber>
+        <licenseDate><![CDATA[Date You Became a Licensed Driver:*]]></licenseDate>
+        <experience><![CDATA[Driving Experience:*]]></experience>
+        <pastFiveYears><![CDATA[Has]]></pastFiveYears>
+        <trafficViolationOrTicket><![CDATA[Had a traffic violation or ticket?*]]></trafficViolationOrTicket>
+        <accidentClaimOrLoss><![CDATA[Had auto accidents, losses, claims, including vehicle theft in the last 3 years?*]]></accidentClaimOrLoss>
+        <howLong><![CDATA[How <span color="#307a8a" textDecoration="underline">long has this insurance been in effect</span>?*]]></howLong>
+        <goodStudentDiscount><![CDATA[Eligible for <span color="#307a8a" textDecoration="underline">Good Student Discount</span>?*]]></goodStudentDiscount>
+        <goodStudentTT><![CDATA[To qualify for the Good Student discount, the student must be a full-time student between the ages of 16-24*. The student must be either a sophomore, junior or senior in high school or a student at a college, university or four-year trade school. In addition, the student must meet at least one of the following academic requirements:
+<br />
+- Rank scholastically among the upper 20% of his/her class <br />
+- Have at least a B or equivalent grade average <br />
+- Have at least a 3 point average on a 4 point scale for all subjects<br />
+- Be on the dean's list, honor roll or a similar list that indicates scholastic achievement<br />
+<br />
+For home schooled students only, the student must be between the ages of 16-24*. In addition, the student must have scored, within the last 12 months, in the upper 20% in one of the following nationally recognized scholastic achievement tests:
+<br />
+- American College Test (ACT) <br />
+- California Achievement Test <br />
+- Iowa Test of Basic Skills <br />
+- Preliminary American College Test (PACT) <br />
+- Preliminary Scholastic Aptitude Test (PSAT) <br />
+- Scholastic Aptitude Test-1 (SAT-1)<br />
+<br />
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements.
+<br /><br />
+* Please note that married women under age 25 are not eligible for this discount.]]></goodStudentTT>
+        <activeDuty><![CDATA[Just returning from <span color="#307a8a" textDecoration="underline">US Military Active Duty</span> within the last 6 months?*]]></activeDuty>
+        <militaryTT><![CDATA[Just returning from US Military Active Duty within the last 6 months?<br/><br/>If you are in the military and can show proof that:<br/><br/>a) you were insured prior to being called to active duty, and<br/>b) you were on active duty during the time period,<br/><br/>you will be considered to have continuous insurance coverage.]]></militaryTT>
+        <coverageDurationTT><![CDATA[The uninterrupted length of time you have liability coverage for your autos.<br/><br/>In Wisconsin, prior insurance is not used as a factor to determine your premium.]]></coverageDurationTT>
+        <currentInsuranceCompany><![CDATA[Current Insurance Company:*]]></currentInsuranceCompany>
+        <currentInsured><![CDATA[Do you currently have auto insurance?*]]></currentInsured>
+        <otherConviction><![CDATA[Had a conviction for other than a motor vehicle violation?*]]></otherConviction>
+        <sr22><![CDATA[Have you been advised by the department of motor vehicles that you are required to carry an <span color="#307a8a" textDecoration="underline">SR22 (Financial Responsibility) Filing</span> on your license?*]]></sr22>
+   		<sr22TT><![CDATA[Financial Responsibility filing required by the state which provides proof of the ability on the part of an individual to pay damages that could arise from future accidents in which the driver may become involved. An individual may be required to file to regain a driver's license after revocation or to reinstate a driver's license as a condition of getting an occupational license.]]></sr22TT>
+    	<majorViolations><![CDATA[Had major violations in the last]]></majorViolations>
+    	<licenseRefused><![CDATA[Had their driver's license refused, cancelled or expired?*]]></licenseRefused>
+    	<revoked><![CDATA[Had a license revoked, suspended, or restricted within last 5 years?*]]></revoked>
+
+    </section>
+    
+    <section name="Discounts">
+        <title><![CDATA[Insurance Discounts]]></title>
+        <formHeaderTitle><![CDATA[Save more with a multiple policy discount]]></formHeaderTitle>
+        <formSubTitle><![CDATA[Select a home owner type policy and a discount will be applied to your auto policy today. An agent will assist you later to select the right policy for you]]></formSubTitle>
+        <policyDiscountType><![CDATA[Policy Discount Type:]]></policyDiscountType>
+        <selectPolicyType><![CDATA[Select a Policy Type:]]></selectPolicyType>
+        <provideContact><![CDATA[Provide Contact Information]]></provideContact>
+        <providePreferred><![CDATA[Please provide us with your preferred contact information]]></providePreferred>
+        <methodOfContact><![CDATA[Method of Contact:]]></methodOfContact>
+        <emailAddress><![CDATA[Email Address:]]></emailAddress>
+        <phoneNumber><![CDATA[Phone Number:]]></phoneNumber>
+        <bestTime><![CDATA[Best time to call or special instructions:]]></bestTime>
+    </section>
+    
+    <section name="ContactInfo">
+        <title>Contact Information</title>
+        <formHeaderTitle>Verify or Add Your Information</formHeaderTitle>
+        <emailAddress>Email Address:</emailAddress>
+        <phoneNumber>Phone Number:</phoneNumber>
+        <verifyAddress>Please verify that your email address is correct</verifyAddress>
+        <editEmail>Edit Email</editEmail>
+    </section>
+    
+    <section name="ChooseCoverage">
+        <title>Choose Your Coverage</title>
+        <customizeBtnLbl>Customize</customizeBtnLbl>
+        <compareBtnLbl>Compare</compareBtnLbl>
+        <gridHeaderCoverage>Coverage</gridHeaderCoverage>
+        <gridHeaderLimits>Limits</gridHeaderLimits>
+        <gridHeaderPremium>Premium</gridHeaderPremium>
+        <applyOnlineBtnLbl>Apply Online</applyOnlineBtnLbl>
+        <perMonth>Per Month</perMonth>
+        <selectYourVehicles>Select Your Vehicles</selectYourVehicles>
+        <basic>Basic</basic>
+        <bodilyInjuryLiability>Bodily Injury Liability:</bodilyInjuryLiability>
+    </section>
+    
+    <section name="CompareCoverage">
+        <title>Choose Your Coverage</title>
+    </section>
+    
+    <section name="DriverEmployment">
+        <title>Employment</title>
+        <formHeaderTitle>We need some simple details about your employment</formHeaderTitle>
+        <driver>Driver</driver>
+        <nonDriver>Non-Driver</nonDriver>
+        <employmentStatus><![CDATA[Employment Status:*]]></employmentStatus>
+        <occupationCategory><![CDATA[Occupation Category:*]]></occupationCategory>
+        <occupation><![CDATA[Occupation:*]]></occupation>
+        <employer><![CDATA[Employer:*]]></employer>
+        <occupationDescription><![CDATA[Occupation Description:*]]></occupationDescription>
+    </section>
+    
+    <section name="chooseCity">
+    	<title><![CDATA[Choose City]]></title>
+    	<description><![CDATA[More than one city uses this ZIP Code.  Select the location that best describes where you live.]]></description>
+   	</section>
+   
+   	<section name="AddSSN">
+   		<modalTitle><![CDATA[Provide Social Security Number]]></modalTitle>
+   		<enter><![CDATA[Enter SSN]]></enter>
+   		<continueTo><![CDATA[Continue]]></continueTo>
+   		<content><![CDATA[Providing a Social Security Number increases the likelihood of accurate information being returned. 
+            This will allow us to provide you the best possible quote.  Click 'Enter SSN' to enter Social 
+            Security Number (SSN) on this page or click the 'Continue' button if you do not want to enter your SSN.]]></content>
+   	</section>
+    
+    <section name="AddTitleHolders">
+        <title>Add Titleholders</title>
+        <formHeaderTitle>To save you time, we've retrieved titleholder information for your vehicle. Please verify this information is current for each vehicle.</formHeaderTitle>
+        <titleholderName><![CDATA[Titleholder Name:]]></titleholderName>
+        <saveLienholder><![CDATA[Save Lienholder]]></saveLienholder>
+        <titleholder><![CDATA[Titleholder]]></titleholder>
+        <saveTitleholder><![CDATA[Save Titleholder]]></saveTitleholder>
+        <typeofLienholder><![CDATA[Type of Lienholder]]></typeofLienholder>
+        <orgBiz><![CDATA[Organization/Business]]></orgBiz>
+        <lienholderName><![CDATA[Lienholder Name:]]></lienholderName>
+        <search><![CDATA[Search]]></search>
+        <individual><![CDATA[Individual]]></individual>
+        <firstname><![CDATA[First Name:]]></firstname>
+        <lastname><![CDATA[Last Name:]]></lastname>
+    </section>
+    
+    <section name="SaveAndContinue">
+    	<title><![CDATA[Save And Continue]]></title>
+    	<subtitle2><![CDATA[You can retreive your quote in the future by logging into the My Account and clicking 'Retreive Saved Quotes' at the top of the page.]]></subtitle2>
+    	<subtitle><![CDATA[In order to save your quote you must set up an account on our Web Site.  This is a 
+           simple process that does not require having a policy with American Family.  Once you have 
+           saved your quote, you will be able to retrieve it from My Account]]>
+        </subtitle>
+    	<option1><![CDATA[Option 1 - Log Into My Account]]></option1>
+    	<option2><![CDATA[Option 2 - Enroll in My Account]]></option2>
+    	<option1Copy><![CDATA[If you have an existing account on amfam.com, click 'Login']]></option1Copy>
+    	<option2Copy><![CDATA[If you need to set up an account, click 'Enroll In My Account']]></option2Copy>
+    	<enroll><![CDATA[Enroll In My Account]]></enroll>
+    </section>
+    
+    <section name="Help">
+        <whyDoWeAsk>Why do we ask this?</whyDoWeAsk>
+        <whyDoWeAskTooltip>This will be a tooltip.</whyDoWeAskTooltip>
+        <whatDoesCustomizedMean>What do we mean by customized?</whatDoesCustomizedMean>
+    </section>
+    
+    <section name="editDriverModal">
+    	<title><![CDATA[Edit]]></title>
+    	<firstName><![CDATA[First Name:*]]></firstName>
+    	<lastName><![CDATA[Last Name:*]]></lastName>
+    	<middleInitial><![CDATA[Middle Initial:]]></middleInitial>
+    	<dateOfBirth><![CDATA[Date of Birth:*]]></dateOfBirth>
+    	<gender><![CDATA[Gender:*]]></gender>
+    	<maritalStatus><![CDATA[Marital Status:*]]></maritalStatus>
+    	<relationshipTo><![CDATA[Relationship To]]></relationshipTo>
+    	<suffix><![CDATA[Suffix:]]></suffix>
+    	<maritalStatusTT><![CDATA[For quoting purposes, married is defined as an individual living with his or her spouse.]]></maritalStatusTT>
+    </section>
+    
+    <section name="coverageHelpText">
+
+    	<BODILY_INJURY_LIABILITY><![CDATA[
+    	This coverage pays damages owed to others as a result of bodily injuries for which you are legally liable.
+Bodily injury means bodily injury to or sickness, disease or death of any person. Bodily Injury Liability Coverage is written showing two limits, for example, 100,000/300,000. Known as split-limit liability, the first figure, 100,000, means the company is liable for an amount up to $100,000 for bodily injury damages for one person per occurrence. Liability in excess of $100,000 for one person would not be the company's responsibility.
+The second figure, 300,000, refers to the maximum liability ($300,000) the company has when bodily injuries are suffered by two or more persons per occurrence. For example, if five persons were injured due to an insured's negligence, each one having suffered $75,000 of bodily injury damages, a total of $375,000 (75,000 x 5) has to be raised to pay the judgment in full. American Family is limited to $300,000 for this occurrence so the insured would be liable for the difference.
+Bodily Injury Liability Coverage: 
+•	Protects the named insureds in the policy. 
+•	Protects household members while driving autos authorized under the policy. 
+•	Protects others driving your auto with your permission. 
+•	Protects you when you use most types of trailers with your auto. 
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements.
+    	]]></BODILY_INJURY_LIABILITY>
+    	
+    	<PROPERTY_DAMAGE_LIABILITY>
+    	<![CDATA[
+    	This coverage pays for property damage sustained by others for which you are legally liable. Property damage means damage to or destruction of tangible property, including loss of its use. The limit of coverage selected is the Company's maximum liability for all property damage resulting from one occurrence. 
+Property Damage Liability Coverage: 
+•	Protects the named insured in the policy. 
+•	Protects household members while driving autos authorized under the policy. 
+•	Protects others driving your auto with your permission. 
+•	Protects you when you use most types of trailers with your auto. 
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements.
+    	
+    	]]>
+    	</PROPERTY_DAMAGE_LIABILITY>
+    	
+    	<MEDICAL_EXPENSE>
+    	
+    	</MEDICAL_EXPENSE>
+    	
+    	<PERSONAL_INJURY_PROTECTION>
+    	
+    	</PERSONAL_INJURY_PROTECTION>
+    	
+    	<UNINSURED_MOTORIST_PROTECTION>
+    	
+    	</UNINSURED_MOTORIST_PROTECTION>
+    	<![CDATA[
+    	This coverage provides payment for legally collectable damages for bodily injury or death (but not property damage) if you or any person riding in your auto is injured or killed by an at-fault uninsured auto, or if the driver at fault is never identified.
+If you would like Uninsured Motorist Coverage included in this estimate or quote, please select the coverage limit desired. If you do not want Uninsured Motorist Coverage included, please select "No Coverage."
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	
+    	]]>
+    	<UNDERINSURED_MOTORIST_PROTECTION>
+    	<![CDATA[
+    	This coverage provides payment for legally collectable damages for bodily injury or death if you or any person riding in your auto is injured or killed in an accident with a auto whose driver has insufficient liability coverage to cover your damages. Note, this coverage may vary from state to state.
+If you would like Underinsured Motorist Coverage included in this estimate or quote, please select the coverage limit desired. If you do not want Underinsured Motorist Coverage included, please select "No Coverage."
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements.
+    	
+    	]]>
+    	</UNDERINSURED_MOTORIST_PROTECTION>
+    	
+    	<COMPREHENSIVE>
+    	<![CDATA[This coverage pays for accidental loss or damage to your insured auto from most causes except collision or upset. This includes loss caused by windstorm, glass breakage, fire, theft, hail, vandalism, falling objects, flood, and colliding with birds or animals. In addition, Comprehensive Coverage provides up to $20 per day ($600 total) for transportation expenses if your auto is stolen.
+If you would like Comprehensive Coverage included in this estimate or quote, please select the deductible desired. If you do not want Comprehensive Coverage included, please select "No Coverage."
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	]]>
+    	</COMPREHENSIVE>
+    	
+    	<COLLISION>
+    	<![CDATA[
+    	This coverage:
+•	Pays for loss or damage to your auto caused by collision or upset, regardless of who is at fault. 
+•	Pays for damages when a collision does not involve another auto. 
+•	Protects you against damage done in hit-and-run accidents. 
+If you would like Collision Coverage included in this estimate or quote, please select the deductible desired. If you do not want Collision Coverage included, please select "No Coverage."
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	]]>
+    	</COLLISION>
+    	
+    	<EMERGENCY_ROAD_SERVICES>
+    	<![CDATA[
+    	This coverage pays for reasonable costs incurred for your insured auto away from a service station or garage for: 
+•	Mechanical labor up to one hour at the place of your auto's breakdown. 
+•	Towing to the nearest place where the necessary repairs can be made if your auto will not run. 
+•	Towing your auto out if it is stuck on, or immediately next to, a public road or highway 
+•	Delivery of gas, oil, loaned battery or change of tire. (This does not cover the cost of these items.) 
+If you would like Emergency Road Service Coverage included in this estimate or quote, please select "Included". If this coverage is not desired, select "No Coverage".
+    	]]>
+    	</EMERGENCY_ROAD_SERVICES>
+    	
+    	<RENTAL_REIMBURSEMENT>
+    	<![CDATA[
+    	This coverage pays for the rental of a auto from a car rental agency or garage, up to the limits you select, as a substitute for the auto insured while it is being repaired due to a covered loss. (This does not include costs for gasoline or mileage.) 
+If you would like Rental Reimbursement Coverage included in this estimate or quote, please select the coverage limit desired. If you do not want Rental Reimbursement included, please select "No Coverage." 
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	
+    	]]>
+    	</RENTAL_REIMBURSEMENT>
+    	
+    	<DEATH_AND_DISMEMBERMENT>
+    	
+    	</DEATH_AND_DISMEMBERMENT>
+    	
+    	<FULL_GLASS_COVERAGE>
+    	<![CDATA[
+    	The comprehensive coverage deductible, if any, will not apply to loss caused by breakage of glass. 
+    	]]>
+    	</FULL_GLASS_COVERAGE>
+    	
+    	<TOTAL_DISABILITY>
+    	<![CDATA[Total disability coverage provides a weekly compensation during the time an insured is continuously, totally disabled due to bodily injury sustained in an auto accident.]]>
+    	</TOTAL_DISABILITY>
+    	
+    	<UNINSURED_MOTORIST_PROPERTY_DAMAGE>
+    	<![CDATA[
+    	This coverage reimburses the insured for damage to or destruction of the insured vehicle caused by a liable uninsured motorist.
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements.
+    	
+    	]]>
+    	</UNINSURED_MOTORIST_PROPERTY_DAMAGE>
+    	
+    	<UNINSURED_MOTORIST_ADDED_ON>
+    	<![CDATA[
+    	Uninsured Motorist coverage provides protection for persons who are legally entitled to recover damages from the owner or operator of an uninsured motor vehicle.  These damages include bodily injury or death and property damage losses from an auto accident.  
+Uninsured Motorist Added On coverage provides bodily injury and property damage coverage to you in excess of the liability limits of the responsible person, up to the limits you purchase.
+If you would like Uninsured Motorist Added On coverage included in this Estimate or Quote, please select the coverage limit desired. If you do not want Uninsured Motorist Added On coverage included, please select "No Coverage".
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	
+    	]]>
+    	</UNINSURED_MOTORIST_ADDED_ON>
+    	
+    	<UNINSURED_MOTORIST_REDUCED>
+    	<![CDATA[
+    	Uninsured Motorist coverage provides protection for persons who are legally entitled to recover damages from the owner or operator of an uninsured motor vehicle.  These damages include bodily injury or death and property damage losses from an auto accident.  
+Uninsured Motorist Reduced coverage provides bodily injury and property damage coverage to you at limits that are offset, or reduced by, any limits available to you from the person responsible, any amounts payable to you under workers’ compensation, disability or similar laws, or payments made under any other coverage of this policy.
+If you would like Uninsured Motorist Reduced coverage included in this Estimate or Quote, please select the coverage limit desired. If you do not want Uninsured Motorist Reduced coverage included, please select "No Coverage."  The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	
+    	]]>
+    	</UNINSURED_MOTORIST_REDUCED>
+    	
+    	<UNINSURED_MOTORIST_PROPERTY_DAMAGE_ADDED_ON>
+    	<![CDATA[
+    	Uninsured Motorist Property Damage Added On coverage is included in Uninsured Motorist Added On coverage.  
+Uninsured Motorist Property damage coverage provides payment for property damages a person is legally entitled to recover from the owner or operator of an uninsured motor vehicle.  
+Uninsured Motorist Property Damage Added On coverage provides property damage coverage to you in excess of the liability limits of the responsible person, up to the limits you purchase.
+If you would like Uninsured Motorist Property Damage Added On Coverage included in this Estimate or Quote, please select the deductible desired. If you do not want this coverage included, please select "No Coverage."
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements. 
+    	
+    	]]>
+    	</UNINSURED_MOTORIST_PROPERTY_DAMAGE_ADDED_ON>
+    	
+    	<UNINSURED_MOTORIST_PROPERTY_DAMAGE_ADDED_ON_DEDUCTIBLE>
+    	
+    	</UNINSURED_MOTORIST_PROPERTY_DAMAGE_ADDED_ON_DEDUCTIBLE>
+    	
+    	<UNINSURED_MOTORIST_PROPERTY_DAMAGE_REDUCED>
+    	
+    	</UNINSURED_MOTORIST_PROPERTY_DAMAGE_REDUCED>
+    	
+    	<UNINSURED_MOTORIST_PROPERTY_DAMAGE_REDUCED_DEDUCTIBLE>
+    	
+    	</UNINSURED_MOTORIST_PROPERTY_DAMAGE_REDUCED_DEDUCTIBLE>
+    	
+    	<AUTO_THEFT_PREVENTION>
+    	
+    	</AUTO_THEFT_PREVENTION>
+    	
+    	<UNDERINSURED_MOTORIST_PROPERTY_DAMAGE>
+    	<![CDATA[
+    	This coverage provides payment for legally collectable damages for bodily injury or death if you or any person riding in your auto is injured or killed in an accident with a auto whose driver has insufficient liability coverage to cover your damages. Note, this coverage may vary from state to state.
+If you would like Underinsured Motorist Coverage included in this estimate or quote, please select the coverage limit desired. If you do not want Underinsured Motorist Coverage included, please select "No Coverage."
+The descriptions contained herein are only a general description of terms and available coverages and are not a statement of contract. All coverages are subject to all policy provisions and applicable endorsements.
+    	
+    	]]>
+    	</UNDERINSURED_MOTORIST_PROPERTY_DAMAGE>
+    	
+    </section>
+    
+    <section name="Footer">
+    	<copyright><![CDATA[©2007-2010 American Family Insurance. All Rights Reserved.]]></copyright>
+    </section>
+</copy>
