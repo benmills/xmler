@@ -3,19 +3,14 @@ package {
 
   public class Main extends Sprite {
     public function Main():void {
-      var vo:TestVo = new TestVo();
-
-      for (var i:* in vo) {
-        trace(i, vo[i]);  
-      }
-
-      //Xmler.add('copydeck-en', init);
-      
+      Xmler.add('copydeck-en', init);
+      Xmler.strict = false; 
     }
 
     public function init(data:*):void {
-      var footer:Object = Xmler.get('Footer');
-      trace(footer.copyright);
+      var vo:TestVo = new TestVo();
+      Xmler.mapVO(vo, "Footer");
+      trace(vo.copyright);
     }
   }
 }

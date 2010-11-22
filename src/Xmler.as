@@ -2,11 +2,14 @@ package {
   import flash.events.*;
   import flash.display.*;
 	import flash.net.*;
+  import flash.utils.describeType;
 
-  public class Xmler extends Sprite{
+  public class Xmler {
+
     // Singleton
-    public static var instance:Xmler;
-    public static var defaultDeck:String;
+    public static var instance:Xmler,
+                      defaultDeck:String,
+                      strict:Boolean = true; // If true, Xmler will throw runtime errors if it can't find something
 
     public static function add(name:String, callback:Function = null):void {
       if (Xmler.instance == null) Xmler.instance = new Xmler();
@@ -14,13 +17,22 @@ package {
     }
 
     public static function get(objectName:String, deckName:String = null):Object {
+      if (Xmler.instance == null) Xmler.instance = new Xmler();
       if (deckName == null) deckName = Xmler.getDefaultDeck();
       return Xmler.instance.get(objectName, deckName);  
     }
 
     public static function getDefaultDeck():String {
+      if (Xmler.instance == null) Xmler.instance = new Xmler();
       if (Xmler.defaultDeck != null) return Xmler.defaultDeck;
       return Xmler.instance.lastAddedDeck;
+    }
+
+    public static function mapVO(vo:*, objName:String, deckName:String = null):void {
+        if (Xmler.instance == null) Xmler.instance = new Xmler();
+        if (deckName == null) deckName = Xmler.getDefaultDeck();
+
+        Xmler.instance.map(vo, objName, deckName);
     }
 
 
@@ -42,8 +54,9 @@ package {
         decks[xml_name] = {};
         parseResults(e, decks[xml_name], callback);
       });
+
       loader.addEventListener(IOErrorEvent.IO_ERROR, function(e:Event):void {
-        callback(e);
+        notice("Copydeck at assets/"+xml_name+".xml could not be found", true);
       });
 
       loader.load(new URLRequest("assets/"+xml_name+".xml"));
@@ -65,7 +78,36 @@ package {
     }
 
     public function get(objectName:String, deckName:String):Object {
-      return decks[deckName][objectName];  
+      if (decks[deckName]) {
+        if (decks[deckName][objectName]) return decks[deckName][objectName];
+        notice("Object `"+objectName+"` on deck "+deckName+" could not be found", true);
+        return null;
+      }
+
+      notice(deckName+" could not be found in Xmler", true);
+      return  null;
+    }
+
+    public function map(vo:*, objName:String, deckName:String) {
+      
+        // We are using describeType to get the class as XML then we are looping
+        // over the XML to get a hash of the property name and type
+
+        var desc:XML = describeType(vo);
+        var propMap:Object = {};
+
+        for each (var item:XML in desc.variable) {
+          var itemName:String = item.name().toString();
+          propMap[item.@name.toString()] = item.@type.toString();
+        }
+        
+        // Map to copydeck
+        var obj:Object = get(objName, deckName);
+        
+        for (var i:String in propMap) {
+          if (!obj[i]) notice("VO cannot find property `"+i+"` on obj "+objName+" in copy deck "+deckName, true)
+          else vo[i] = obj[i];
+        }
     }
     
     // Makes sure the callback exists, then if results exist pass it
@@ -74,6 +116,15 @@ package {
         if (results != null) callback(results);
         else callback();
       }  
+    }
+
+    // Any errors or messages come out of here
+    public function notice(msg:String, error:Boolean = false):void {
+      if (Xmler.strict && error) {
+        throw new Error(msg);    
+      } else {
+        trace(msg);     
+      }
     }
 
   }

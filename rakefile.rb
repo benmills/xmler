@@ -12,7 +12,7 @@ project_model :model do |m|
   m.width                   = 970
   m.height                  = 550
   # m.use_fdb               = true
-  # m.use_fcsh              = true
+  #m.use_fcsh              = true
   # m.preprocessor          = 'cpp -D__DEBUG=false -P - - | tail -c +3'
   # m.preprocessed_path     = '.preprocessed'
   # m.src_dir               = 'src'
