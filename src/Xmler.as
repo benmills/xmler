@@ -57,7 +57,22 @@ package {
         var section:Object = deck[raw.section[i].@name] = {};
         
         for (var ii:* in raw.section[i].children()) {
-            section[raw.section[i].child(ii).name()] = raw.section[i].child(ii);
+            var prop:XMLList = raw.section[i].child(ii);
+            var attrs:XMLList = prop.attributes();
+
+            if (attrs.length() > 0) {
+              // Complex value
+              var obj:Object = {};
+              for (var iii:int = 0; iii < attrs.length(); iii++) {
+                obj[String(attrs[iii].name())] = attrs[iii].toXMLString();
+              }
+              obj.contents = prop.child(ii);
+
+              section[prop.name()] = obj;
+            } else {
+              // Simple value
+              section[prop.name()] = prop.child(ii);
+            }
         }
       }
       
