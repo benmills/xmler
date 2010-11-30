@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <copy>
     <section name="Adv">
-      <BIL title="Bill is cool">Here is some text</BIL>
-      <SIL title="A Sil?" blog="ben">Here is some text</SIL>
+      <list>
+        <BIL title="Bill is cool">Here is some text</BIL>
+        <SIL title="A Sil?" blog="ben">Here is some other text</SIL>
+      </list>
+      <norm>dum dump</norm>
+      <comp name="Jess">Best in the world</comp>
+      <table key="people">
+        <row>
+          <name>Ben</name>
+          <gender>Male</gender>
+          <age>23</age>
+        </row>
+        <row>
+          <name>Jess</name>
+          <gender>Female</gender>
+          <age>21</age>
+        </row>
+      </table>
     </section>
     <!--<section name="Intro">-->
         <!--<title>Your Time Is Precious</title>-->

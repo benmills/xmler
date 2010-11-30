@@ -64,32 +64,68 @@ package {
 
     private function parseResults(e:Event, deck:Object, callback:Function = null):void {
       var raw:XML = new XML(e.target.data);
-      doCallbak(loadCallback, raw);
-
+      doCallbak(loadCallback, raw)
       for (var i:* in raw.section) {
         var section:Object = deck[raw.section[i].@name] = {};
-        
+
         for (var ii:* in raw.section[i].children()) {
-            var prop:XMLList = raw.section[i].child(ii);
-            var attrs:XMLList = prop.attributes();
-
-            if (attrs.length() > 0) {
-              // Complex value
-              var obj:Object = {};
-              for (var iii:int = 0; iii < attrs.length(); iii++) {
-                obj[String(attrs[iii].name())] = attrs[iii].toXMLString();
-              }
-              obj.contents = prop.child(ii);
-
-              section[prop.name()] = obj;
-            } else {
-              // Simple value
-              section[prop.name()] = prop.child(ii);
-            }
+            parseObject(raw.section[i].child(ii), section);
         }
       }
       
       doCallbak(callback, deck);
+    }
+
+    private function parseObject(prop:XMLList, section:Object, name:String = null):void {
+      var attrs:XMLList = prop.attributes();
+      if (name == null) name = prop.name();
+      
+      // Check if it is a table
+      if (prop.name() == 'table') {
+        var table:Object = {
+          type: "table",
+          header: [],
+          rows: null
+        };
+       
+        for (var i:String in prop.child(0).children()) {
+          table.header.push(prop.child(0).child(i).name())
+        }
+
+        section[prop.@key] = table;
+        return;
+      }
+
+      // Check if it is an array
+      if(prop.children().length() > 1) {
+        var objs:Object = {};
+        var ii:int = 0;
+        for (var i:String in prop.children()) {
+          parseObject(prop.child(i), objs, i.toString());
+        }
+        var arr:Array = [];
+        var c:int = 0;
+        for (var o:String in objs) arr[c++] = objs[o];
+        section[name] = arr;
+        return;
+      }
+
+      if (attrs.length() > 0) {
+        // Complex value
+        var obj:Object = {};
+        for (var iii:int = 0; iii < attrs.length(); iii++) {
+          obj[String(attrs[iii].name())] = attrs[iii].toXMLString();
+        }
+        obj.contents = prop;
+        obj.key = prop.name();
+        
+        section[name] = obj;
+        return;
+      } else {
+        // Simple value
+        section[name] = prop;
+        return;
+      }
     }
 
     public function get(objectName:String, deckName:String):Object {
@@ -103,7 +139,7 @@ package {
       return  null;
     }
 
-    public function map(vo:*, objName:String, deckName:String) {
+    public function map(vo:*, objName:String, deckName:String):void {
       
         // We are using describeType to get the class as XML then we are looping
         // over the XML to get a hash of the property name and type
